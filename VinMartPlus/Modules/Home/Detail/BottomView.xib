@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BottomView" customModule="VinMartPlus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xXa-Sn-xOU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHd-x2-M5m">
+                            <rect key="frame" x="16" y="0.0" width="116" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="message">
+                                <color key="titleColor" red="0.99607843137254903" green="0.3411764705882353" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onMessageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="b6X-iV-eLh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ohe-ty-MYs">
+                            <rect key="frame" x="134" y="0.0" width="116" height="667"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="cardbnt">
+                                <color key="titleColor" red="0.99607843137254903" green="0.3411764705882353" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onAddToCardAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="LXf-tl-9is"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYU-Jy-cOQ">
+                            <rect key="frame" x="250" y="0.0" width="125" height="667"/>
+                            <color key="backgroundColor" red="0.99607843137254903" green="0.3411764705882353" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Mua ngay">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onBuyNowAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ehX-Nf-cLQ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6r-X5-akM">
+                            <rect key="frame" x="132" y="8" width="2" height="651"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="2" id="6jj-vB-EzK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lHd-x2-M5m" secondAttribute="bottom" id="3Y7-oI-SJt"/>
+                        <constraint firstItem="GYU-Jy-cOQ" firstAttribute="width" secondItem="xXa-Sn-xOU" secondAttribute="width" multiplier="1/3" id="DNp-tx-e5C"/>
+                        <constraint firstItem="GYU-Jy-cOQ" firstAttribute="leading" secondItem="Ohe-ty-MYs" secondAttribute="trailing" id="EJA-iH-GHv"/>
+                        <constraint firstItem="lHd-x2-M5m" firstAttribute="leading" secondItem="xXa-Sn-xOU" secondAttribute="leading" constant="16" id="KAK-wQ-zmA"/>
+                        <constraint firstItem="Ohe-ty-MYs" firstAttribute="width" secondItem="lHd-x2-M5m" secondAttribute="width" id="OSe-FA-f7Z"/>
+                        <constraint firstItem="Ohe-ty-MYs" firstAttribute="top" secondItem="xXa-Sn-xOU" secondAttribute="top" id="Pyy-KV-Bnw"/>
+                        <constraint firstAttribute="bottom" secondItem="GYU-Jy-cOQ" secondAttribute="bottom" id="a4a-Gr-LzS"/>
+                        <constraint firstItem="GYU-Jy-cOQ" firstAttribute="top" secondItem="xXa-Sn-xOU" secondAttribute="top" id="kNG-6Z-dUq"/>
+                        <constraint firstAttribute="trailing" secondItem="GYU-Jy-cOQ" secondAttribute="trailing" id="pjb-Qo-lQy"/>
+                        <constraint firstItem="d6r-X5-akM" firstAttribute="leading" secondItem="lHd-x2-M5m" secondAttribute="trailing" id="rRx-iK-yAZ"/>
+                        <constraint firstAttribute="bottom" secondItem="d6r-X5-akM" secondAttribute="bottom" constant="8" id="s9U-Ig-jsF"/>
+                        <constraint firstAttribute="bottom" secondItem="Ohe-ty-MYs" secondAttribute="bottom" id="uFd-rn-4VP"/>
+                        <constraint firstItem="Ohe-ty-MYs" firstAttribute="leading" secondItem="d6r-X5-akM" secondAttribute="trailing" id="uiW-Pi-2K9"/>
+                        <constraint firstItem="lHd-x2-M5m" firstAttribute="top" secondItem="xXa-Sn-xOU" secondAttribute="top" id="whe-FM-X9T"/>
+                        <constraint firstItem="d6r-X5-akM" firstAttribute="top" secondItem="xXa-Sn-xOU" secondAttribute="top" constant="8" id="yac-JI-pxC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xXa-Sn-xOU" secondAttribute="bottom" id="Ibh-jC-K9N"/>
+                <constraint firstItem="xXa-Sn-xOU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SJP-Kb-8gU"/>
+                <constraint firstItem="xXa-Sn-xOU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Szp-xd-w14"/>
+                <constraint firstAttribute="trailing" secondItem="xXa-Sn-xOU" secondAttribute="trailing" id="fjy-47-syg"/>
+            </constraints>
+            <connections>
+                <outlet property="cardBnt" destination="Ohe-ty-MYs" id="Kju-YS-B4d"/>
+                <outlet property="messageBnt" destination="lHd-x2-M5m" id="8QN-WR-5hp"/>
+            </connections>
+            <point key="canvasLocation" x="-1.5" y="284.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardbnt" width="32" height="32"/>
+        <image name="message" width="32" height="32"/>
+    </resources>
+</document>
